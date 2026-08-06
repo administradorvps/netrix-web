@@ -11,7 +11,7 @@ export default function Contact({ lang }: { lang: Lang }) {
 
   const handleWhatsApp = () => {
     const text = encodeURIComponent(`Hola Netrix! Soy ${name || "un interesado"}.\n\n${message || "Me interesa conocer sus servicios."}`);
-    window.open(`https://wa.me/56900000000?text=${text}`, "_blank");
+    window.open(`https://wa.me/56976292908?text=${text}`, "_blank");
   };
 
   return (
@@ -81,7 +81,7 @@ export default function Contact({ lang }: { lang: Lang }) {
           {/* Contact options */}
           <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
             <a
-              href="https://wa.me/56900000000"
+              href="https://wa.me/56976292908"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
