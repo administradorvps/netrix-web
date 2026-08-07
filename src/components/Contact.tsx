@@ -100,7 +100,7 @@ export default function Contact({ lang }: { lang: Lang }) {
             </a>
 
             <a
-              href="mailto:contacto@netrix.io"
+              href="mailto:contacto@netrix.cl"
               style={{ display: "flex", alignItems: "center", gap: "1rem", padding: "1.25rem", borderRadius: "1rem", border: "1px solid rgba(255,255,255,0.06)", background: "rgba(255,255,255,0.02)", textDecoration: "none", transition: "all 0.3s", flex: 1 }}
               onMouseOver={e => { e.currentTarget.style.borderColor = "rgba(59,130,246,0.25)"; e.currentTarget.style.background = "rgba(59,130,246,0.04)"; }}
               onMouseOut={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.06)"; e.currentTarget.style.background = "rgba(255,255,255,0.02)"; }}
@@ -110,7 +110,7 @@ export default function Contact({ lang }: { lang: Lang }) {
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ color: "white", fontWeight: 600, fontSize: "0.875rem" }}>Email</div>
-                <div style={{ color: "#64748b", fontSize: "0.75rem", marginTop: 2 }}>contacto@netrix.io</div>
+                <div style={{ color: "#64748b", fontSize: "0.75rem", marginTop: 2 }}>contacto@netrix.cl</div>
               </div>
               <ArrowRight size={15} style={{ color: "#475569", flexShrink: 0 }} />
             </a>

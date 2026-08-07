@@ -99,6 +99,10 @@ export default function Hero({ lang }: HeroProps) {
 
       {/* Content */}
       <div style={{ position: "relative", zIndex: 10, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", width: "100%", maxWidth: "48rem", margin: "0 auto", gap: "1.5rem" }}>
+        <h1 className="sr-only">
+          Netrix — {t.title} {t.titleHighlight}
+        </h1>
+
         {/* 3D Logo */}
         <Logo3D />
 

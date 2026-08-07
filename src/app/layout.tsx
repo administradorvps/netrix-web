@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,11 +13,28 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "Netrix — Transforming businesses through intelligent technology";
+const description =
+  "Netrix ofrece soluciones tecnológicas avanzadas: automatización con IA, desarrollo web, agente WhatsApp, sistemas a medida, auditorías y más.";
+
 export const metadata: Metadata = {
-  title: "Netrix — Transforming businesses through intelligent technology",
-  description:
-    "Netrix ofrece soluciones tecnológicas avanzadas: automatización con IA, desarrollo web, agente WhatsApp, sistemas a medida, auditorías y más.",
+  metadataBase: new URL(SITE_URL),
+  title,
+  description,
   keywords: "automatización IA, desarrollo web, WhatsApp IA, sistemas empresariales, LATAM, Chile",
+  openGraph: {
+    title,
+    description,
+    url: SITE_URL,
+    siteName: "Netrix",
+    locale: "es_CL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

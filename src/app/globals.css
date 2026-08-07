@@ -49,6 +49,18 @@ body {
   .container { padding-left: 2.5rem; padding-right: 2.5rem; }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* 3D logo animations */
 @keyframes spin3d {
   0%   { transform: rotateY(0deg) rotateX(8deg); }
