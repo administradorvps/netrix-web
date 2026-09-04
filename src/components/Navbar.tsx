@@ -22,9 +22,9 @@ export default function Navbar({ lang, onLangChange }: NavbarProps) {
   }, []);
 
   const navLinks = [
-    { label: t.services, href: "#services" },
-    { label: t.about, href: "#about" },
-    { label: t.contact, href: "#contact" },
+    { label: t.services, href: "/#services" },
+    { label: t.about, href: "/#about" },
+    { label: t.contact, href: "/#contact" },
   ];
 
   return (
@@ -61,7 +61,7 @@ export default function Navbar({ lang, onLangChange }: NavbarProps) {
           </button>
 
           <a
-            href="#contact"
+            href="/#contact"
             className="hidden md:flex items-center text-sm font-medium px-5 py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white transition-all duration-200 shadow-lg shadow-blue-600/20"
           >
             {t.contact}
@@ -95,7 +95,7 @@ export default function Navbar({ lang, onLangChange }: NavbarProps) {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setMenuOpen(false)}
             className="w-full text-center py-3 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-all duration-200"
           >

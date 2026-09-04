@@ -18,9 +18,9 @@ export default function Footer({ lang }: { lang: Lang }) {
           </div>
           <nav style={{ display: "flex", alignItems: "center", gap: "2rem", flexWrap: "wrap" }}>
             {[
-              { label: nav.services, href: "#services" },
-              { label: nav.about, href: "#about" },
-              { label: nav.contact, href: "#contact" },
+              { label: nav.services, href: "/#services" },
+              { label: nav.about, href: "/#about" },
+              { label: nav.contact, href: "/#contact" },
             ].map((link) => (
               <a
                 key={link.href}
