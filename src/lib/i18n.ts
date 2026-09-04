@@ -58,6 +58,11 @@ export const translations = {
         },
       ],
     },
+    auditBanner: {
+      title: "¿Tus correos masivos están llegando a spam?",
+      subtitle: "Audita gratis el dominio de tu empresa en segundos — SPF, DKIM y DMARC.",
+      cta: "Auditar mi dominio gratis",
+    },
     about: {
       title: "¿Por qué Netrix?",
       subtitle:
@@ -189,6 +194,11 @@ export const translations = {
             "Backup strategies, disaster recovery, and data protection to keep your business always operational.",
         },
       ],
+    },
+    auditBanner: {
+      title: "Is your bulk email landing in spam?",
+      subtitle: "Audit your company's domain for free in seconds — SPF, DKIM, and DMARC.",
+      cta: "Audit my domain for free",
     },
     about: {
       title: "Why Netrix?",
