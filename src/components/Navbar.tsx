@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import NovaxisLogo from "./NovaxisLogo";
+import NetrixLogo from "./NetrixLogo";
 import type { Lang } from "@/lib/i18n";
 import { translations } from "@/lib/i18n";
 
@@ -36,7 +36,7 @@ export default function Navbar({ lang, onLangChange }: NavbarProps) {
       }`}
     >
       <nav className="container" style={{ height: "4rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <NovaxisLogo size={32} />
+        <NetrixLogo size={32} />
 
         {/* Desktop links */}
         <div style={{ display: "none", gap: "2rem" }} className="md:flex items-center">

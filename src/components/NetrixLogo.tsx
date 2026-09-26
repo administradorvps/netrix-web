@@ -6,7 +6,7 @@ interface LogoProps {
   size?: number;
 }
 
-export default function NovaxisLogo({
+export default function NetrixLogo({
   className = "",
   showText = true,
   size = 40,

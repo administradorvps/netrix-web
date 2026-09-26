@@ -8,54 +8,58 @@ export const translations = {
       contact: "Contacto",
     },
     hero: {
-      badge: "Tecnología para el futuro",
-      title: "Transformamos negocios con",
-      titleHighlight: "tecnología inteligente",
+      badge: "Diseño × Tecnología",
+      title: "Diseñamos lo digital. Construimos lo que hay detrás.",
+      titleHighlight: "Diseño · Tecnología · Automatización",
       subtitle:
-        "Automatización, IA, sistemas a medida y soluciones digitales para empresas que quieren crecer sin límites.",
-      cta: "Conoce nuestros servicios",
-      ctaSecondary: "Habla con nosotros",
+        "Creamos experiencias digitales y sistemas que ayudan a tu negocio a vender, operar y crecer mejor.",
+      cta: "Ver lo que hacemos",
+      ctaSecondary: "Hablar con Netrix",
     },
     services: {
-      title: "Nuestros Servicios",
+      title: "Lo que construimos",
       subtitle:
-        "Soluciones tecnológicas completas adaptadas a cualquier industria y tamaño de empresa.",
-      items: [
+        "Diseño y tecnología trabajando juntos: desde la experiencia que ve tu cliente hasta los sistemas que la hacen funcionar.",
+      categories: [
         {
-          title: "Desarrollo Web",
-          description:
-            "Sitios y aplicaciones web modernas, rápidas y escalables que convierten visitantes en clientes.",
+          number: "01",
+          title: "Experiencias Digitales",
+          description: "Presencia digital que convierte.",
+          tags: ["Websites", "E-commerce", "UX / UI"],
         },
         {
-          title: "Agente WhatsApp IA",
-          description:
-            "Automatiza la atención al cliente 24/7 con un agente inteligente que responde, vende y gestiona en WhatsApp.",
+          number: "02",
+          title: "IA & Automatización",
+          description: "Procesos y atención que trabajan solos.",
+          tags: ["WhatsApp AI", "Automatización de procesos", "Integraciones"],
         },
         {
-          title: "Automatización de Procesos",
-          description:
-            "Eliminamos tareas repetitivas con flujos de trabajo inteligentes que ahorran tiempo y reducen errores.",
-        },
-        {
-          title: "Auditorías Tecnológicas",
-          description:
-            "Analizamos tu infraestructura actual e identificamos vulnerabilidades, ineficiencias y oportunidades de mejora.",
-        },
-        {
+          number: "03",
           title: "Sistemas a Medida",
-          description:
-            "Desarrollamos software personalizado que se adapta exactamente a los procesos únicos de tu empresa.",
+          description: "Software adaptado exactamente a tu negocio.",
+          tags: ["Software a medida", "Apps móviles", "Plataformas internas"],
         },
         {
-          title: "Aplicaciones Móviles",
-          description:
-            "Apps nativas y multiplataforma para iOS y Android que llevan tu negocio al bolsillo de tus clientes.",
+          number: "04",
+          title: "Tecnología & Seguridad",
+          description: "La base que mantiene todo operativo.",
+          tags: ["Infraestructura", "Backups", "Auditorías", "Seguridad"],
         },
-        {
-          title: "Respaldos y Seguridad",
-          description:
-            "Estrategias de backup, recuperación ante desastres y protección de datos para mantener tu negocio siempre operativo.",
-        },
+      ],
+      complementary: "Capacidades complementarias: IA · Integraciones · Cloud · Seguridad · Datos",
+    },
+    experiences: {
+      eyebrow: "Experiencias Netrix",
+      title: "Una dirección digital para cada tipo de negocio",
+      subtitle: "No todos los negocios necesitan la misma experiencia digital.",
+      closing: "Cada negocio necesita una experiencia diferente. Nosotros diseñamos la interfaz y construimos la tecnología que la sostiene.",
+      viewDemo: "Ver experiencia",
+      items: [
+        { name: "Lara", category: "Belleza", url: "https://larahairclub.vercel.app", image: "/images/experiences/lara.png" },
+        { name: "Maja", category: "Gastronomía", url: "https://deploy-maja.vercel.app", image: "/images/experiences/maja.png" },
+        { name: "Rayo", category: "Servicios técnicos", url: "https://deploy-rayo.vercel.app", image: "/images/experiences/rayo.png" },
+        { name: "CALA", category: "Salud", url: "https://deploy-cala.vercel.app", image: "/images/experiences/cala.png" },
+        { name: "LUME", category: "Moda & Objetos", url: "https://deploy-lume.vercel.app", image: "/images/experiences/lume.png" },
       ],
     },
     auditBanner: {
@@ -69,7 +73,7 @@ export const translations = {
         "Somos un equipo de ingenieros especializados en transformar la forma en que las empresas operan, usando tecnología de vanguardia.",
       points: [
         "Experiencia en infraestructura y desarrollo de software",
-        "Soluciones personalizadas, no plantillas genéricas",
+        "Partimos de una dirección diseñada para tu negocio y la adaptamos a lo que necesitas",
         "Soporte continuo y acompañamiento post-implementación",
         "Enfoque en ROI: cada solución genera valor medible",
       ],
@@ -135,7 +139,7 @@ export const translations = {
     },
     footer: {
       rights: "Todos los derechos reservados.",
-      tagline: "Transforming businesses through intelligent technology",
+      tagline: "Transformamos negocios con tecnología inteligente.",
     },
   },
   en: {
@@ -145,54 +149,58 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      badge: "Technology for the future",
-      title: "Transforming businesses with",
-      titleHighlight: "intelligent technology",
+      badge: "Design × Technology",
+      title: "We design the digital. We build what's behind it.",
+      titleHighlight: "Design · Technology · Automation",
       subtitle:
-        "Automation, AI, custom systems, and digital solutions for companies that want to grow without limits.",
-      cta: "Explore our services",
-      ctaSecondary: "Talk to us",
+        "We create digital experiences and systems that help your business sell, operate, and grow better.",
+      cta: "See what we do",
+      ctaSecondary: "Talk to Netrix",
     },
     services: {
-      title: "Our Services",
+      title: "What we build",
       subtitle:
-        "Complete technological solutions adapted to any industry and company size.",
-      items: [
+        "Design and technology working together: from the experience your customer sees to the systems that run behind it.",
+      categories: [
         {
-          title: "Web Development",
-          description:
-            "Modern, fast, and scalable websites and web applications that turn visitors into customers.",
+          number: "01",
+          title: "Digital Experiences",
+          description: "Digital presence that converts.",
+          tags: ["Websites", "E-commerce", "UX / UI"],
         },
         {
-          title: "WhatsApp AI Agent",
-          description:
-            "Automate customer support 24/7 with an intelligent agent that responds, sells, and manages on WhatsApp.",
+          number: "02",
+          title: "AI & Automation",
+          description: "Processes and support that run themselves.",
+          tags: ["WhatsApp AI", "Process automation", "Integrations"],
         },
         {
-          title: "Process Automation",
-          description:
-            "We eliminate repetitive tasks with intelligent workflows that save time and reduce errors.",
-        },
-        {
-          title: "Technology Audits",
-          description:
-            "We analyze your current infrastructure and identify vulnerabilities, inefficiencies, and improvement opportunities.",
-        },
-        {
+          number: "03",
           title: "Custom Systems",
-          description:
-            "We develop custom software that adapts exactly to your company's unique processes.",
+          description: "Software built exactly for your business.",
+          tags: ["Custom software", "Mobile apps", "Internal platforms"],
         },
         {
-          title: "Mobile Applications",
-          description:
-            "Native and cross-platform apps for iOS and Android that bring your business to your customers' pockets.",
+          number: "04",
+          title: "Technology & Security",
+          description: "The foundation that keeps everything running.",
+          tags: ["Infrastructure", "Backups", "Audits", "Security"],
         },
-        {
-          title: "Backup & Security",
-          description:
-            "Backup strategies, disaster recovery, and data protection to keep your business always operational.",
-        },
+      ],
+      complementary: "Complementary capabilities: AI · Integrations · Cloud · Security · Data",
+    },
+    experiences: {
+      eyebrow: "Netrix Experiences",
+      title: "A digital direction for every kind of business",
+      subtitle: "Not every business needs the same digital experience.",
+      closing: "Every business needs a different experience. We design the interface and build the technology that supports it.",
+      viewDemo: "View experience",
+      items: [
+        { name: "Lara", category: "Beauty", url: "https://larahairclub.vercel.app", image: "/images/experiences/lara.png" },
+        { name: "Maja", category: "Food & Hospitality", url: "https://deploy-maja.vercel.app", image: "/images/experiences/maja.png" },
+        { name: "Rayo", category: "Technical Services", url: "https://deploy-rayo.vercel.app", image: "/images/experiences/rayo.png" },
+        { name: "CALA", category: "Medical", url: "https://deploy-cala.vercel.app", image: "/images/experiences/cala.png" },
+        { name: "LUME", category: "Fashion & Objects", url: "https://deploy-lume.vercel.app", image: "/images/experiences/lume.png" },
       ],
     },
     auditBanner: {
@@ -206,7 +214,7 @@ export const translations = {
         "We are a team of engineers specialized in transforming the way businesses operate using cutting-edge technology.",
       points: [
         "Expertise in infrastructure and software development",
-        "Custom solutions, not generic templates",
+        "We start from a direction designed for your business and adapt it to what you need",
         "Ongoing support and post-implementation guidance",
         "ROI-focused: every solution generates measurable value",
       ],

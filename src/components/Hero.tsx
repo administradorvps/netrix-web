@@ -99,9 +99,7 @@ export default function Hero({ lang }: HeroProps) {
 
       {/* Content */}
       <div style={{ position: "relative", zIndex: 10, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", width: "100%", maxWidth: "48rem", margin: "0 auto", gap: "1.5rem" }}>
-        <h1 className="sr-only">
-          Netrix — {t.title} {t.titleHighlight}
-        </h1>
+        <span className="sr-only">Netrix</span>
 
         {/* 3D Logo */}
         <Logo3D />
@@ -115,6 +113,11 @@ export default function Hero({ lang }: HeroProps) {
             {t.titleHighlight}
           </span>
         </div>
+
+        {/* Headline */}
+        <h1 style={{ color: "white", fontSize: "clamp(1.5rem, 4vw, 2.5rem)", fontWeight: 700, lineHeight: 1.25, maxWidth: "40rem" }}>
+          {t.title}
+        </h1>
 
         {/* Subtitle */}
         <p style={{ color: "#94a3b8", fontSize: "clamp(0.95rem, 2.5vw, 1.125rem)", lineHeight: 1.7, maxWidth: "36rem" }}>

@@ -1,11 +1,6 @@
 "use client";
 
 import { translations, type Lang } from "@/lib/i18n";
-import { Globe, MessageCircle, Zap, Search, Code2, Smartphone, Shield } from "lucide-react";
-
-const icons = [Globe, MessageCircle, Zap, Search, Code2, Smartphone, Shield];
-const iconColors = ["text-blue-400","text-green-400","text-cyan-400","text-yellow-400","text-blue-400","text-purple-400","text-red-400"];
-const iconBg    = ["bg-blue-500/10 border-blue-500/20","bg-green-500/10 border-green-500/20","bg-cyan-500/10 border-cyan-500/20","bg-yellow-500/10 border-yellow-500/20","bg-blue-500/10 border-blue-500/20","bg-purple-500/10 border-purple-500/20","bg-red-500/10 border-red-500/20"];
 
 export default function Services({ lang }: { lang: Lang }) {
   const t = translations[lang].services;
@@ -30,24 +25,31 @@ export default function Services({ lang }: { lang: Lang }) {
         </div>
 
         {/* Grid */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 300px), 1fr))", gap: "1rem" }}>
-          {t.items.map((service, i) => {
-            const Icon = icons[i];
-            return (
-              <div
-                key={service.title}
-                className={`group relative p-6 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.045] hover:border-white/[0.12] transition-all duration-300 cursor-default overflow-hidden`}
-              >
-                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className={`w-10 h-10 rounded-xl border flex items-center justify-center mb-5 transition-all duration-300 ${iconBg[i]}`}>
-                  <Icon size={18} className={iconColors[i]} />
-                </div>
-                <h3 className="text-white font-semibold text-base mb-2.5">{service.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-400 transition-colors">{service.description}</p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 320px), 1fr))", gap: "1rem" }}>
+          {t.categories.map((cat) => (
+            <div
+              key={cat.number}
+              className="group relative p-7 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.045] hover:border-white/[0.12] transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="text-blue-400/60 font-mono text-xs tracking-widest">{cat.number}</span>
+              <h3 className="text-white font-semibold text-lg mt-2 mb-2">{cat.title}</h3>
+              <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-400 transition-colors mb-4">{cat.description}</p>
+              <div className="flex flex-wrap gap-x-3 gap-y-1.5">
+                {cat.tags.map((tag) => (
+                  <span key={tag} className="text-slate-400 text-xs border border-white/[0.08] rounded-full px-2.5 py-1">
+                    {tag}
+                  </span>
+                ))}
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
+
+        {/* Complementary capabilities */}
+        <p style={{ textAlign: "center", color: "#64748b", fontSize: "0.8rem", marginTop: "2.5rem", letterSpacing: "0.02em" }}>
+          {t.complementary}
+        </p>
       </div>
     </section>
   );

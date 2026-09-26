@@ -1,6 +1,6 @@
 "use client";
 
-import NovaxisLogo from "./NovaxisLogo";
+import NetrixLogo from "./NetrixLogo";
 import { translations, type Lang } from "@/lib/i18n";
 
 export default function Footer({ lang }: { lang: Lang }) {
@@ -13,7 +13,7 @@ export default function Footer({ lang }: { lang: Lang }) {
         {/* Top row: logo + nav */}
         <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "2rem" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-            <NovaxisLogo size={28} />
+            <NetrixLogo size={28} />
             <p style={{ color: "#334155", fontSize: "0.75rem", maxWidth: "22rem" }}>{t.tagline}</p>
           </div>
           <nav style={{ display: "flex", alignItems: "center", gap: "2rem", flexWrap: "wrap" }}>
