@@ -26,12 +26,33 @@ export default function Services({ lang }: { lang: Lang }) {
 
         {/* Grid */}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 320px), 1fr))", gap: "1rem" }}>
-          {t.categories.map((cat) => (
+          {t.categories.map((cat, i) => (
             <div
               key={cat.number}
-              className="group relative p-7 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.045] hover:border-white/[0.12] transition-all duration-300 overflow-hidden"
+              className="group relative p-7 rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.045] transition-all duration-300 overflow-hidden"
+              style={{
+                borderLeft: "1px solid rgba(255,255,255,0.06)",
+                marginTop: i % 2 === 1 ? "1.25rem" : 0,
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderLeftColor = "#3b82f6"; e.currentTarget.style.borderLeftWidth = "2px"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderLeftColor = "rgba(255,255,255,0.06)"; e.currentTarget.style.borderLeftWidth = "1px"; }}
             >
-              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span
+                aria-hidden
+                style={{
+                  position: "absolute",
+                  top: "-0.5rem",
+                  right: "0.75rem",
+                  fontSize: "3.5rem",
+                  fontWeight: 800,
+                  color: "transparent",
+                  WebkitTextStroke: "1px rgba(96,165,250,0.14)",
+                  lineHeight: 1,
+                  userSelect: "none",
+                }}
+              >
+                {cat.number}
+              </span>
               <span className="text-blue-400/60 font-mono text-xs tracking-widest">{cat.number}</span>
               <h3 className="text-white font-semibold text-lg mt-2 mb-2">{cat.title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-400 transition-colors mb-4">{cat.description}</p>

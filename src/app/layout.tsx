@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, IBM_Plex_Mono } from "next/font/google";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const geistSans = Geist({
+const manrope = Manrope({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
+const plexMono = IBM_Plex_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
-const title = "Netrix — Transforming businesses through intelligent technology";
+const title = "Netrix — Diseñamos lo digital. Construimos lo que hay detrás.";
 const description =
-  "Netrix ofrece soluciones tecnológicas avanzadas: automatización con IA, desarrollo web, agente WhatsApp, sistemas a medida, auditorías y más.";
+  "Diseño, tecnología y automatización para hacer crecer negocios: experiencias digitales, IA, sistemas a medida y seguridad.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -45,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${manrope.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="min-h-screen w-full bg-[#06060e] text-slate-200 overflow-x-hidden">
         {children}

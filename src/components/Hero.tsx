@@ -144,18 +144,27 @@ export default function Hero({ lang }: HeroProps) {
           </a>
         </div>
 
-        {/* Stats */}
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "clamp(1.5rem, 5vw, 4rem)", marginTop: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid rgba(255,255,255,0.05)", width: "100%" }}>
+        {/* Marca de trabajo */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap", gap: "0.5rem", marginTop: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid rgba(255,255,255,0.05)", width: "100%" }}>
           {[
-            { value: "100%", label: lang === "es" ? "A medida" : "Custom" },
-            { value: "24/7", label: lang === "es" ? "Soporte" : "Support" },
-            { value: "IA", label: lang === "es" ? "Tecnología" : "Technology" },
-          ].map((stat, i) => (
-            <div key={stat.value} style={{ textAlign: "center", position: "relative" }}>
-              {i > 0 && <div style={{ position: "absolute", left: "clamp(-1.5rem, -3vw, -2.5rem)", top: "50%", transform: "translateY(-50%)", width: 1, height: 24, background: "rgba(255,255,255,0.07)" }} />}
-              <div style={{ fontSize: "clamp(1.1rem, 3vw, 1.5rem)", fontWeight: 700, color: "white", lineHeight: 1.2 }}>{stat.value}</div>
-              <div style={{ fontSize: "0.7rem", color: "#64748b", marginTop: 2 }}>{stat.label}</div>
-            </div>
+            lang === "es" ? "Diseño a medida" : "Custom design",
+            lang === "es" ? "Soporte directo" : "Direct support",
+            lang === "es" ? "IA aplicada" : "Applied AI",
+          ].map((label) => (
+            <span
+              key={label}
+              style={{
+                fontSize: "0.72rem",
+                color: "#94a3b8",
+                padding: "0.4rem 0.9rem",
+                borderRadius: "9999px",
+                border: "1px solid rgba(96,165,250,0.18)",
+                background: "rgba(59,130,246,0.05)",
+                letterSpacing: "0.01em",
+              }}
+            >
+              {label}
+            </span>
           ))}
         </div>
       </div>
