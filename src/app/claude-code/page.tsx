@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { Check, ArrowRight } from "lucide-react";
 
-// TODO(angel): reemplaza con tu link real de checkout de Hotmart antes de publicar.
-const HOTMART_URL = "https://pay.hotmart.com/REEMPLAZAR-CON-TU-LINK";
+const HOTMART_URL = "https://pay.hotmart.com/F107793495F";
 
 const display = { fontFamily: "var(--font-display)" };
 const mono = { fontFamily: "var(--font-mono)" };
