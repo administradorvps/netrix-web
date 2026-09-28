@@ -410,7 +410,17 @@ export default function ClaudeCodeLanding() {
                 ESTO NO ES UNA FÓRMULA MÁGICA. ES UN MÉTODO.
               </p>
             </div>
-            <CtaButton big />
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 14 }}>
+              <div style={{ textAlign: "center" }}>
+                <div style={{ ...display, fontSize: 40, fontWeight: 700, color: "#F5F5F5", lineHeight: 1 }}>
+                  US$19<span style={{ fontSize: 20, color: "#A1A1A1" }}>,99</span>
+                </div>
+                <div style={{ ...mono, fontSize: 10, letterSpacing: "0.15em", color: "#5E5E5E", marginTop: 6 }}>
+                  PAGO ÚNICO
+                </div>
+              </div>
+              <CtaButton big />
+            </div>
           </div>
         </div>
       </section>
